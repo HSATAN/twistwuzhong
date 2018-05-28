@@ -15,7 +15,7 @@ class BaseResource(Resource):
         pass
 
     def render_POST(self, request):
-        return ujson.dumps(self.real_POST(request))
+        return self.real_POST(request)
 
     def real_HEAD(self, request):
         pass
