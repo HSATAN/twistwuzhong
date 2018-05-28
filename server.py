@@ -326,12 +326,12 @@ text = """
 </script>
 </html>
 """
-
+from data.text import text5
 class Index(Resource):
 
     def render_GET(self,request):
 
-        return text
+        return text5
 
 
 
