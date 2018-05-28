@@ -12,9 +12,14 @@ class Root(Resource):
 
     def __init__(self):
         Resource.__init__(self)
-
+        self.putChild("", Index())
         self.putChild("rundata",RunData())
 
+class Index(Resource):
+
+    def render_GET(self,request):
+
+        return "欢迎访问"
 
 
 
