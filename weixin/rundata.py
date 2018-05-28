@@ -4,9 +4,6 @@ from baseresource.greenresource import BaseResource
 from lxml import etree
 import random
 import logging
-import json
-import requests
-
 
 class RunData(BaseResource):
 

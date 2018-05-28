@@ -7,12 +7,12 @@ import json
 class BaseResource(Resource):
 
     def render_HEAD(self, request):
+        print("-------------------")
         return self.real_HEAD(request)
-        pass
 
     def render_GET(self, request):
+        print("get-------------------")
         return self.real_GET(request)
-        pass
 
     def render_POST(self, request):
         return self.real_POST(request)
@@ -21,6 +21,7 @@ class BaseResource(Resource):
         pass
 
     def real_GET(self, request):
+        return "tets"
         pass
 
     def real_POST(self, request):
