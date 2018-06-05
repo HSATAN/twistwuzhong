@@ -235,8 +235,8 @@ text5 = """
             serverConfig: {
                 baseUrl: 'http://wxs.grplpl.com/',
                 // baseUrl: 'http://wxs.testhost.com:3000/',
-                projectID: '0001',
-                salt: 'ayme4jf59ibcgqr3',
+                projectID: 'hrmbzx',
+                salt: 'ayf59mgqre4jibc3',
             },
             tabSelected: 'today',
             db: null,
