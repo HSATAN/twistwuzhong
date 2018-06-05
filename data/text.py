@@ -230,7 +230,7 @@ text5 = """
             userObjRaw: {},
             //TODO 改动
             // fakeName: '1Xh8.PTww',
-            fakeName: 'BZXQ.q9Zj',
+            fakeName: '72496d63356b737a',
             //TODO 改动
             serverConfig: {
                 baseUrl: 'http://wxs.grplpl.com/',
