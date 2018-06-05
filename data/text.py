@@ -7,7 +7,7 @@ text5 = """
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>微信运动数据Demo_V4 本地数据库示例</title>
+    <title>茅坝中学健康运动</title>
     <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/radialIndicator/1.3.1/radialIndicator.min.js"></script>
     <link rel="stylesheet" href="http://cdn.bootcss.com/spectre.css/0.5.0/spectre.min.css">
@@ -72,18 +72,12 @@ text5 = """
         <div class="columns">
             <div class="column col-12">
                 <blockquote>
-                    微信运动数据Demo_V4 本地数据库示例
+                    教师运动情况统计
                 </blockquote>
                 <p style="font-size: 0.5em">本Demo采用了纯粹的前端H5直接调用本API的接口，直接实现了无服务器的展示微信运动数据的功能。<br><br>
                     主要使用了Vue.js(非编译模式)、jQuery、一个简单的css框架spectre、前端压缩解压库pako和前端数据库Dexie。
                     <br><br>
                     调用了几个API：getDataByDate_v4、getSingleData_v4、getDataAll_v4。
-                </p>
-                <p style="font-size: 0.5em; color: blue;">
-                    相比进阶示例-2，这个例子展示了实操下与计步器BOT进行配合，动态的展示不同用户的数据。<br>
-                    用户在计步器Bot的对话下，将首次访问一个带有其fakeName的Url，我们将此fakeName保存在本地。<br>
-                    后期用户再次访问时，将直接载入其fakeName和本地的数据，再次获取到服务器数据后，再更新本地数据。<br>
-                    利用本地数据有助于大幅提升用户体验。
                 </p>
                 <p style="font-size: 0.5em">
                     talk is cheap, show me the code. 具体请看代码。
