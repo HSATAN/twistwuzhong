@@ -83,7 +83,6 @@ text5 = """
             <div class="column col-12">
                 <blockquote>
                     我的信息<br>
-                    <span style="font-size: 0.5em; color: orangered;">(示例使用的用户fakeName为：{{fakeName}})</span>
                 </blockquote>
                 <div class="step-available">
                     <div class="info">
@@ -223,7 +222,7 @@ text5 = """
             userObjRaw: {},
             //TODO 改动
             // fakeName: '1Xh8.PTww',
-            fakeName: '9avK.2740',
+            fakeName: '%s',
             //TODO 改动
             serverConfig: {
                 baseUrl: 'http://wxs.grplpl.com/',
