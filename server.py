@@ -7,7 +7,7 @@ import json
 import logging
 import re
 from weixin.rundata import RunData
-
+from weixin.api.get_code import GetCode
 class Root(Resource):
 
     def __init__(self):
@@ -16,7 +16,6 @@ class Root(Resource):
         self.putChild("rundata",RunData())
         self.putChild("wx", WXCheck())
         self.putChild("MP_verify_NDeHTSMiVI1x3rfh.txt", Auth())
-
 class Auth(Resource):
     def render_GET(self, request):
         return 'NDeHTSMiVI1x3rfh'
@@ -47,6 +46,8 @@ class Index(Resource):
             print fn
             return text1 + fn+text2
         except Exception as e:
+            code = request.args.get('code')[0]
+            logging.info("code =  %s" % code)
             return error_page
 
 
