@@ -33,11 +33,15 @@ from data.text import text1, text2, fakeName
 class Index(Resource):
 
     def render_GET(self,request):
-        id = request.args.get('id')[0]
-        print id
-        fn = fakeName % id
-        print fn
-        return text1 + fn+text2
+        try:
+            id = request.args.get('id')[0]
+            print id
+            fn = fakeName % id
+            print fn
+            return text1 + fn+text2
+        except Exception as e:
+            return '服务器正在维护中，请稍后重试'
+
 
 
 
