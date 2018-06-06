@@ -14,6 +14,19 @@ class Root(Resource):
         Resource.__init__(self)
         self.putChild("", Index())
         self.putChild("rundata",RunData())
+        self.putChild("wx", WXCheck())
+class WXCheck(Resource):
+    """
+    微信服务器验证
+    """
+    def render_GET(self,request):
+        try:
+            echostr = request.args.get('callback_token')[0]
+            return echostr
+        except Exception as e:
+            logging.info("访问错误")
+            print("微信验证失败")
+        return "非法访问"
 
 text = """
 <!DOCTYPE html>
