@@ -97,7 +97,7 @@ text1 = """
                         </div>
                     </div>
                     <h5 class="text-left text-black-hint margin-top-xs"
-                        style="font-size: 0.5em; margin-top: 1em; margin-bottom: 2em;">
+                        style="font-size: 0.7em; margin-top: 1em; margin-bottom: 2em; color: orangered;">
                         &nbsp;&nbsp;数据更新时间：{{userObj.tsString}}
                     </h5>
                 </div>

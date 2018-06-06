@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49ea01fb-00c9-444a-a44a-4ad0abc07f3f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/text.py" afterPath="$PROJECT_DIR$/data/text.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/default.py" afterPath="$PROJECT_DIR$/default.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/twistwuzhong$server.coverage" NAME="server Coverage Results" MODIFIED="1528294852876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/twistwuzhong$server.coverage" NAME="server Coverage Results" MODIFIED="1528295579902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/twistwuzhong$default.coverage" NAME="default Coverage Results" MODIFIED="1528294031940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -23,11 +22,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="server.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+            <state relative-caret-position="396">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#24#60#0" expanded="true" />
               </folding>
@@ -35,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="text.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="text.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="225" column="29" lean-forward="true" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
+            <state relative-caret-position="144">
+              <caret line="99" column="103" lean-forward="false" selection-start-line="99" selection-start-column="103" selection-end-line="99" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -131,8 +130,8 @@
         <option value="$PROJECT_DIR$/weixin/rundata.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/default.py" />
-        <option value="$PROJECT_DIR$/data/text.py" />
         <option value="$PROJECT_DIR$/server.py" />
+        <option value="$PROJECT_DIR$/data/text.py" />
       </list>
     </option>
   </component>
@@ -692,21 +691,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="225" column="29" lean-forward="true" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+        <state relative-caret-position="396">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="e#24#60#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="99" column="103" lean-forward="false" selection-start-line="99" selection-start-column="103" selection-end-line="99" selection-end-column="103" />
+          <folding />
         </state>
       </provider>
     </entry>
