@@ -74,14 +74,7 @@ text5 = """
                 <blockquote>
                     教师运动情况统计
                 </blockquote>
-                <p style="font-size: 0.5em">本Demo采用了纯粹的前端H5直接调用本API的接口，直接实现了无服务器的展示微信运动数据的功能。<br><br>
-                    主要使用了Vue.js(非编译模式)、jQuery、一个简单的css框架spectre、前端压缩解压库pako和前端数据库Dexie。
-                    <br><br>
-                    调用了几个API：getDataByDate_v4、getSingleData_v4、getDataAll_v4。
-                </p>
-                <p style="font-size: 0.5em">
-                    talk is cheap, show me the code. 具体请看代码。
-                </p>
+
             </div>
         </div>
     </div>
@@ -230,7 +223,7 @@ text5 = """
             userObjRaw: {},
             //TODO 改动
             // fakeName: '1Xh8.PTww',
-            fakeName: '72496d63356b737a',
+            fakeName: '9avK.2740',
             //TODO 改动
             serverConfig: {
                 baseUrl: 'http://wxs.grplpl.com/',
