@@ -5,6 +5,7 @@ from twisted.web.resource import Resource
 from twisted.web.server import Site
 import json
 import logging
+import requests
 import re
 from weixin.rundata import RunData
 from weixin.api.get_code import GetCode
@@ -35,7 +36,7 @@ class WXCheck(Resource):
         return "非法访问"
 
 from data.text import text1, text2, fakeName
-from default import error_page
+from default import error_page, APPID, SECRET
 class Index(Resource):
 
     def render_GET(self,request):
@@ -46,8 +47,14 @@ class Index(Resource):
             print fn
             return text1 + fn+text2
         except Exception as e:
-            code = request.args.get('code')[0]
-            logging.info("code =  %s" % code)
+            try:
+                code = request.args.get('code')[0]
+                url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid=%s&secret=%s&code=%s&grant_type=authorization_code' % (APPID,SECRET,code)
+                res = requests.get(url)
+                logging.info(res.text)
+                logging.info("code =  %s" % code)
+            except:
+                pass
             return error_page
 
 
