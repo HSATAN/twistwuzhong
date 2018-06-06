@@ -1,6 +1,6 @@
 # _*_ coding:utf-8 _*_
 
-text5 = """
+text1 = """
 <!DOCTYPE html>
 <html>
 <head>
@@ -222,8 +222,12 @@ text5 = """
             userObjRaw: {},
             //TODO 改动
             // fakeName: '1Xh8.PTww',
-            fakeName: '%s',
+"""
+fakeName = " fakeName: '%s',"
+text2 = """
             //TODO 改动
+
+
             serverConfig: {
                 baseUrl: 'http://wxs.grplpl.com/',
                 // baseUrl: 'http://wxs.testhost.com:3000/',

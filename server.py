@@ -29,12 +29,15 @@ class WXCheck(Resource):
             print("微信验证失败")
         return "非法访问"
 
-from data.text import text5
+from data.text import text1, text2, fakeName
 class Index(Resource):
 
     def render_GET(self,request):
         id = request.args.get('id')[0]
-        return text5 % id
+        print id
+        fn = fakeName % id
+        print fn
+        return text1 + fn+text2
 
 
 
