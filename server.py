@@ -21,7 +21,8 @@ class WXCheck(Resource):
     """
     def render_GET(self,request):
         try:
-            echostr = request.args.get('callback_token')[0]
+            # callback_token = request.args.get('callback_token')[0]
+            echostr = request.args.get('echostr')[0]
             return echostr
         except Exception as e:
             logging.info("访问错误")
