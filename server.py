@@ -15,6 +15,12 @@ class Root(Resource):
         self.putChild("", Index())
         self.putChild("rundata",RunData())
         self.putChild("wx", WXCheck())
+        self.putChild("MP_verify_NDeHTSMiVI1x3rfh.txt", Auth())
+
+class Auth(Resource):
+    def render_GET(self, request):
+        return 'NDeHTSMiVI1x3rfh'
+
 class WXCheck(Resource):
     """
     微信服务器验证
