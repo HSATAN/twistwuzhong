@@ -40,7 +40,7 @@ class Index(Resource):
             print fn
             return text1 + fn+text2
         except Exception as e:
-            return '服务器正在维护中，请稍后重试'
+            return u'服务器正在维护中，请稍后重试'
 
 
 
