@@ -30,6 +30,7 @@ class WXCheck(Resource):
         return "非法访问"
 
 from data.text import text1, text2, fakeName
+from default import error_page
 class Index(Resource):
 
     def render_GET(self,request):
@@ -40,7 +41,7 @@ class Index(Resource):
             print fn
             return text1 + fn+text2
         except Exception as e:
-            return u'服务器正在维护中，请稍后重试'
+            return error_page
 
 
 
