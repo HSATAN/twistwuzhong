@@ -43,6 +43,7 @@ def parse_url(request):
     FromUserName = data.find('FromUserName').text
     CreateTime = data.find('CreateTime').text
     Content = data.find('Content').text
+    MessageId = data.find('MsgId')
     print(Content)
     Content = "您好，你的消息我们已收到，将尽快为您处理，感谢您的关注！"
     Content = "查看运动数据请点击下面的地址\n" + HOST_URL
@@ -52,6 +53,6 @@ def parse_url(request):
     message = '<xml><ToUserName><![CDATA[%s]]></ToUserName><FromUserName>' \
               '<![CDATA[%s]]></FromUserName><CreateTime>%s</CreateTime><MsgType>' \
               '<![CDATA[link]]></MsgType><Title><![CDATA[公众平台官网链接]]>' \
-              '</Title><Description><![CDATA[公众平台官网链接]]></Description><Url><![CDATA[%s]]></Url>' \
-              '<MsgId>%s</MsgId></xml>' % (FromUserName, ToUserName, CreateTime, Content, HOST_URL)
+              '</Title><Description><![CDATA[%s]]></Description><Url><![CDATA[%s]]></Url>' \
+              '<MsgId>%s</MsgId></xml>' % (FromUserName, ToUserName, CreateTime, Content, HOST_URL, MessageId)
     return message
