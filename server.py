@@ -12,7 +12,7 @@ from default import error_page, APPID, SECRET
 from data.default_html import default_html
 from weixin.rundata import RunData
 from weixin.api.get_code import GetCode
-from weixin.weixin_function import parse_text
+from weixin.weixin_function import parse_text, parse_url
 
 class Root(Resource):
 
@@ -47,8 +47,8 @@ class WXCheck(Resource):
         :return:
         """
         try:
-            xmlmessage = ''
-            receiveData = parse_text(request)
+            # receiveData = parse_text(request)
+            receiveData = parse_url(request)
             print(receiveData)
             logging.info(receiveData)
             return receiveData
