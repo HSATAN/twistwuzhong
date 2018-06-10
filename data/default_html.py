@@ -1,6 +1,9 @@
 # _*_ coding:utf-8 _*_
 
-text1 = """
+
+# _*_ coding:utf-8 _*_
+
+default_html = """
 <!DOCTYPE html>
 <html>
 <head>
@@ -81,32 +84,6 @@ text1 = """
                     数据一小时更新一次
                 </blockquote>
 
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="columns">
-            <div class="column col-12">
-                <blockquote>
-                    我的信息<br>
-                </blockquote>
-                <div class="step-available">
-                    <div class="info">
-                        <div class="now-step-wrap text-center">
-                            <div class="now-step-radius" id="nowStep"></div>
-                            <div class="now-step-content-f text-black-hint" style="top:24%">{{userObj.date}}</div>
-                            <div class="now-step-content-f text-black-hint">当前步数</div>
-                            <div class="now-step-content-s text-black-hint">目标 10000 步</div>
-                            <div class="now-step-content-s text-black-hint" style="bottom:26%">
-                                完成 {{userObj.scoreNow}} 步
-                            </div>
-                        </div>
-                    </div>
-                    <h5 class="text-left text-black-hint margin-top-xs"
-                        style="font-size: 0.7em; margin-top: 1em; margin-bottom: 2em; color: orangered;">
-                        &nbsp;&nbsp;数据更新时间：{{userObj.tsString}}
-                    </h5>
-                </div>
             </div>
         </div>
     </div>
@@ -228,9 +205,7 @@ text1 = """
             userObjRaw: {},
             //TODO 改动
             // fakeName: '1Xh8.PTww',
-"""
-fakeName = " fakeName: '%s',"
-text2 = """
+
             //TODO 改动
 
 

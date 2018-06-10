@@ -7,6 +7,7 @@ import json
 import logging
 import requests
 import re
+from data.default_html import default_html
 from weixin.rundata import RunData
 from weixin.api.get_code import GetCode
 class Root(Resource):
@@ -55,7 +56,7 @@ class Index(Resource):
                 logging.info("code =  %s" % code)
             except:
                 pass
-            return error_page
+            return default_html
 
 
 if __name__ == '__main__':
