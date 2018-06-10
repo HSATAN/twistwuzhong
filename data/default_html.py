@@ -388,34 +388,7 @@ default_html = """
             getSingleData: function (_fakeName) {
                 var self = this;
 
-                $.ajax({
-                    type: "post",
-                    url: self.serverConfig.baseUrl + 'getSingleData_v4/',
-                    timeOut: 100000,
-                    data: {
-                        projectID: self.serverConfig.projectID,
-                        salt: self.serverConfig.salt,
-                        fakeName: _fakeName,
-                        isZipped: 1, //打开压缩开关
-                    },
-                    before: function () {
-                    },
-                    success: function (_data) {
-                        var msg = _data.msg;
-                        if (msg.indexOf('success') > -1) {
-                            self.userObjRaw = _data;
-                            var _zippedList = _data.list;
-                            self.userObjRaw.list = pako.ungzip(_data.list, {to: 'string'});
-                            self.saveSingleData(_data.fakeName, _data.nickName, _zippedList);
-                        }
-                        else {
-                            alert(msg);
-                        }
-                    },
-                    error: function () {
-                        alert('fail_2');
-                    }
-                });
+
             },
             showBigIndicator: function (_stepCount) {
                 $("#nowStep").empty();
