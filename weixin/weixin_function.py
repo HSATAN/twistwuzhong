@@ -59,10 +59,10 @@ def parse_url(request):
               '<![CDATA[news]]></MsgType><ArticleCount>1</ArticleCount>' \
               '<Articles>' \
               '<item>' \
-              '<Title>< ![CDATA[微信运动数据统计] ]></Title> ' \
-              '<Description>< ![CDATA[%s] ]></Description>' \
+              '<Title><![CDATA[微信运动数据统计]]></Title> ' \
+              '<Description><![CDATA[%s]]></Description>' \
               '<PicUrl><![CDATA[http://bpic.588ku.com/element_origin_min_pic/17/05/02/1361c3cbd95871860621fff45f5b86ba.jpg!r650]]></PicUrl>' \
-              '<Url>< ![CDATA[%s] ]></Url>' \
+              '<Url><![CDATA[%s]]></Url>' \
               '</item>' \
               '</Articles></xml>' % (FromUserName, ToUserName, CreateTime, Content, HOST_URL)
     return message
