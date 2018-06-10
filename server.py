@@ -44,7 +44,7 @@ class Index(Resource):
             id = request.args.get('id')[0]
             print id
             fn = fakeName % id
-            print fn
+            logging.info(fn)
             return text1 + fn+text2
         except Exception as e:
             try:
@@ -57,22 +57,6 @@ class Index(Resource):
                 pass
             return error_page
 
-
-
-
-if __name__ == '__main__':
-    logfile = 'log'
-    try:
-        import platform
-        if 'linux' in platform.system().lower():
-
-            logfile = '/home/log/xiaochengxu/log'
-    except:
-        pass
-    formats = '[%(asctime)s] [%(filename)s L%(lineno)d] [%(levelname)s] %(message)s'
-    logging.basicConfig(level=logging.INFO, format=formats, filename=logfile)
-    reactor.listenTCP(9999, Site(Root()))
-    reactor.run()
 
 if __name__ == '__main__':
     logfile = 'log'
