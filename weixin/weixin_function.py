@@ -25,7 +25,10 @@ def parse_text(request):
     Content = "您好，你的消息我们已收到，将尽快为您处理，感谢您的关注！"
     Content = "查看运动数据请点击下面的地址\n" + HOST_URL
     # print(receiveData)
-    message = '<xml><ToUserName><![CDATA[%s]]></ToUserName><FromUserName><![CDATA[%s]]></FromUserName><CreateTime>%s</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[%s]]></Content></xml>' % (
+    message = '<xml><ToUserName><![CDATA[%s]]></ToUserName><FromUserName><![CDATA[%s]]></FromUserName>' \
+              '<CreateTime>%s</CreateTime>' \
+              '<MsgType><![CDATA[text]]></MsgType>' \
+              '<Content><![CDATA[%s]]></Content></xml>' % (
     FromUserName, ToUserName, CreateTime, Content)
     return message
 
@@ -48,11 +51,18 @@ def parse_url(request):
     Content = "您好，你的消息我们已收到，将尽快为您处理，感谢您的关注！"
     Content = "查看运动数据请点击下面的地址\n" + HOST_URL
     # print(receiveData)
-    message = '<xml><ToUserName><![CDATA[%s]]></ToUserName><FromUserName><![CDATA[%s]]></FromUserName><CreateTime>%s</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[%s]]></Content></xml>' % (
+    message = '<xml><ToUserName><![CDATA[%s]]></ToUserName><FromUserName>' \
+              '<![CDATA[%s]]></FromUserName><CreateTime>%s</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[%s]]></Content></xml>' % (
         FromUserName, ToUserName, CreateTime, Content)
     message = '<xml><ToUserName><![CDATA[%s]]></ToUserName><FromUserName>' \
               '<![CDATA[%s]]></FromUserName><CreateTime>%s</CreateTime><MsgType>' \
-              '<![CDATA[link]]></MsgType><Title><![CDATA[公众平台官网链接]]>' \
-              '</Title><Description><![CDATA[%s]]></Description><Url><![CDATA[%s]]></Url>' \
-              '<MsgId>%s</MsgId></xml>' % (FromUserName, ToUserName, CreateTime, Content, HOST_URL, MessageId)
+              '<![CDATA[news]]></MsgType><ArticleCount>1</ArticleCount>' \
+              '<Articles>' \
+              '<item>' \
+              '<Title>< ![CDATA[title1] ]></Title> ' \
+              '<Description>< ![CDATA[%s] ]></Description>' \
+              '<PicUrl><![CDATA[http://bpic.588ku.com/element_origin_min_pic/17/05/02/1361c3cbd95871860621fff45f5b86ba.jpg!r650]]></PicUrl>' \
+              '<Url>< ![CDATA[%s] ]></Url>' \
+              '</item>' \
+              '</Articles></xml>' % (FromUserName, ToUserName, CreateTime, Content, HOST_URL)
     return message
