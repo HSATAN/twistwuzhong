@@ -113,19 +113,6 @@ default_html = """
                     </thead>
                     <tbody>
                     <tr>
-                        <td>{{userTodayRankObj.index + 1}}</td>
-                        <td>
-                            <figure class="avatar">
-                                <img :src="userTodayRankObj.head">
-                            </figure>
-                        </td>
-                        <td style="word-break: break-all; word-wrap: break-word;">
-                            {{ userTodayRankObj.nickName }}
-                        </td>
-                        <td>{{userTodayRankObj.scoreNow}}</td>
-                        <td>{{userTodayRankObj.starNow}}</td>
-                    </tr>
-                    <tr>
                         <td colspan="5">
                             <hr/>
                         </td>
