@@ -117,7 +117,19 @@ default_html = """
                             <hr/>
                         </td>
                     </tr>
-
+                    <tr v-for="(item, index) in orderedTodayRank" :key="item.fakeName">
+                        <td>{{index + 1}}</td>
+                        <td>
+                            <figure class="avatar">
+                                <img :src="item.head">
+                            </figure>
+                        </td>
+                        <td style="word-break: break-all; word-wrap: break-word;">
+                            {{ item.nickName }}
+                        </td>
+                        <td>{{item.scoreNow}}</td>
+                        <td>{{item.starNow}}</td>
+                    </tr>
                     </tbody>
                 </table>
                 <table class="table table-striped table-hover" style="font-size: 0.5em;" v-show="tabSelected==='week'">
@@ -131,19 +143,7 @@ default_html = """
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>{{userWeekRankObj.index + 1}}</td>
-                        <td>
-                            <figure class="avatar">
-                                <img :src="userWeekRankObj.head">
-                            </figure>
-                        </td>
-                        <td style="word-break: break-all; word-wrap: break-word;">
-                            {{ userWeekRankObj.nickName }}
-                        </td>
-                        <td>{{userWeekRankObj.scoreNow}}</td>
-                        <td>{{userWeekRankObj.starNow}}</td>
-                    </tr>
+
                     <tr>
                         <td colspan="5">
                             <hr/>
