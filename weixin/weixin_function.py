@@ -43,7 +43,7 @@ def parse_url(request):
     FromUserName = data.find('FromUserName').text
     CreateTime = data.find('CreateTime').text
     Content = data.find('Content').text
-    MessageId = data.find('MsgId')
+    MessageId = data.find('MsgId').text
     print(Content)
     Content = "您好，你的消息我们已收到，将尽快为您处理，感谢您的关注！"
     Content = "查看运动数据请点击下面的地址\n" + HOST_URL
