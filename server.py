@@ -36,6 +36,21 @@ class WXCheck(Resource):
             print("微信验证失败")
         return "非法访问"
 
+    def render_POST(self, request):
+        """
+        接收处理公众号用户消息
+        :param request:
+        :return:
+        """
+        try:
+            xmlmessage = ''
+            receiveData = request.content.read()  # 获取微信发送过来的body
+            print(receiveData)
+            logging.info(receiveData)
+            return "您好，你的消息我们已收到，将尽快为您处理，感谢您的关注！"
+        except Exception as e:
+            logging.info("解析消息错误")
+
 from data.text import text1, text2, fakeName
 from default import error_page, APPID, SECRET
 class Index(Resource):
