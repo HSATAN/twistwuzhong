@@ -23,7 +23,7 @@ def parse_text(request):
     Content = data.find('Content').text
     print(Content)
     Content = "您好，你的消息我们已收到，将尽快为您处理，感谢您的关注！"
-    Content = HOST_URL
+    Content = "查看运动数据请点击下面的地址\n" + HOST_URL
     # print(receiveData)
     message = '<xml><ToUserName><![CDATA[%s]]></ToUserName><FromUserName><![CDATA[%s]]></FromUserName><CreateTime>%s</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[%s]]></Content></xml>' % (
     FromUserName, ToUserName, CreateTime, Content)
