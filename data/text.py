@@ -112,7 +112,7 @@ text1 = """
     </div>
     <div class="container">
         <div class="columns">
-            <div class="column col-12">
+            <div class="column col-12" style="text-align: center";>
                 <blockquote>
                     排行榜
                 </blockquote>

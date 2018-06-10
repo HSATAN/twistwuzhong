@@ -7,6 +7,8 @@ import json
 import logging
 import requests
 import re
+from data.text import text1, text2, fakeName
+from default import error_page, APPID, SECRET
 from data.default_html import default_html
 from weixin.rundata import RunData
 from weixin.api.get_code import GetCode
@@ -53,8 +55,7 @@ class WXCheck(Resource):
         except Exception as e:
             logging.info("解析消息错误 %s" % e)
 
-from data.text import text1, text2, fakeName
-from default import error_page, APPID, SECRET
+
 class Index(Resource):
 
     def render_GET(self,request):
