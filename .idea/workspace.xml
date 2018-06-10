@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="49ea01fb-00c9-444a-a44a-4ad0abc07f3f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/default.py" afterPath="$PROJECT_DIR$/default.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weixin/weixin_function.py" afterPath="$PROJECT_DIR$/weixin/weixin_function.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="56" column="45" lean-forward="true" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+            <state relative-caret-position="1134">
+              <caret line="61" column="33" lean-forward="false" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="33" />
               <folding>
                 <element signature="e#24#60#0" expanded="true" />
               </folding>
@@ -39,11 +40,21 @@
       <file leaf-file-name="weixin_function.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weixin/weixin_function.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
               <folding>
                 <element signature="e#23#45#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/default.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,13 +98,13 @@
         <option value="$PROJECT_DIR$/data/required" />
         <option value="$PROJECT_DIR$/weixin/rundata.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/default.py" />
         <option value="$PROJECT_DIR$/weixin/api/get_code.py" />
         <option value="$PROJECT_DIR$/data/text.py" />
         <option value="$PROJECT_DIR$/data/default_html.py" />
         <option value="$PROJECT_DIR$/weixin/weixin_tool/add_kefu.py" />
         <option value="$PROJECT_DIR$/weixin/weixin_tool/receive.py" />
         <option value="$PROJECT_DIR$/server.py" />
+        <option value="$PROJECT_DIR$/default.py" />
         <option value="$PROJECT_DIR$/weixin/weixin_function.py" />
       </list>
     </option>
@@ -529,9 +540,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -619,7 +630,7 @@
         <state relative-caret-position="450">
           <caret line="17" column="38" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="17" selection-end-column="38" />
           <folding>
-            <element signature="e#23#60#0" expanded="true" />
+            <element signature="e#23#60#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -679,7 +690,7 @@
         <state relative-caret-position="450">
           <caret line="17" column="38" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="17" selection-end-column="38" />
           <folding>
-            <element signature="e#23#60#0" expanded="true" />
+            <element signature="e#23#60#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -731,7 +742,7 @@
         <state relative-caret-position="450">
           <caret line="17" column="38" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="17" selection-end-column="38" />
           <folding>
-            <element signature="e#23#60#0" expanded="true" />
+            <element signature="e#23#60#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -791,7 +802,7 @@
         <state relative-caret-position="450">
           <caret line="17" column="38" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="17" selection-end-column="38" />
           <folding>
-            <element signature="e#23#60#0" expanded="true" />
+            <element signature="e#23#60#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -820,28 +831,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="56" column="45" lean-forward="true" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
-          <folding>
-            <element signature="e#24#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weixin/rundata.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-250">
           <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/default.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -859,7 +852,7 @@
         <state relative-caret-position="200">
           <caret line="11" column="118" lean-forward="false" selection-start-line="11" selection-start-column="118" selection-end-line="11" selection-end-column="118" />
           <folding>
-            <element signature="e#24#39#0" expanded="true" />
+            <element signature="e#24#39#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -874,10 +867,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="61" column="33" lean-forward="false" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="34" lean-forward="false" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weixin/weixin_function.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
           <folding>
             <element signature="e#23#45#0" expanded="true" />
           </folding>

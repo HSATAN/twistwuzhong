@@ -3,6 +3,7 @@ from lxml import etree
 import random
 import logging
 import sys
+from default import HOST_URL
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
@@ -22,6 +23,7 @@ def parse_text(request):
     Content = data.find('Content').text
     print(Content)
     Content = "您好，你的消息我们已收到，将尽快为您处理，感谢您的关注！"
+    Content = HOST_URL
     # print(receiveData)
     message = '<xml><ToUserName><![CDATA[%s]]></ToUserName><FromUserName><![CDATA[%s]]></FromUserName><CreateTime>%s</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[%s]]></Content></xml>' % (
     FromUserName, ToUserName, CreateTime, Content)
