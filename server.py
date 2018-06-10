@@ -10,6 +10,8 @@ import re
 from data.default_html import default_html
 from weixin.rundata import RunData
 from weixin.api.get_code import GetCode
+from weixin.weixin_function import parse_text
+
 class Root(Resource):
 
     def __init__(self):
@@ -44,10 +46,10 @@ class WXCheck(Resource):
         """
         try:
             xmlmessage = ''
-            receiveData = request.content.read()  # 获取微信发送过来的body
+            receiveData = parse_text(request)
             print(receiveData)
             logging.info(receiveData)
-            return "您好，你的消息我们已收到，将尽快为您处理，感谢您的关注！"
+            return receiveData
         except Exception as e:
             logging.info("解析消息错误")
 
