@@ -51,7 +51,7 @@ class WXCheck(Resource):
             logging.info(receiveData)
             return receiveData
         except Exception as e:
-            logging.info("解析消息错误")
+            logging.info("解析消息错误 %s" % e)
 
 from data.text import text1, text2, fakeName
 from default import error_page, APPID, SECRET
