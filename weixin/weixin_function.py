@@ -3,7 +3,8 @@ from lxml import etree
 import random
 import logging
 import sys
-from default import HOST_URL
+from config.default import HOST_URL
+from database.mysql import MysqlDB
 reload(sys)
 sys.setdefaultencoding("utf-8")
 
@@ -47,9 +48,12 @@ def parse_url(request):
     CreateTime = data.find('CreateTime').text
     Content = data.find('Content').text
     logging.info("消息的前两位数 ： %s" % Content[0:2])
-    logging.info("用户明 ： %s" % Content[2:])
+
     if '我是' == Content[0:2]:
         logging.info("用户认证")
+        userName = Content[2:]
+        logging.info("用户明 ： %s" % userName)
+        MysqlDB.insert("insert into users(openid, name) VALUES ('%s', '%s')" % (FromUserName, userName))
     MessageId = data.find('MsgId').text
     print(Content)
     Content = "您好，你的消息我们已收到，将尽快为您处理，感谢您的关注！"
