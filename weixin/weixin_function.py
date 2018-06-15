@@ -46,7 +46,8 @@ def parse_url(request):
     FromUserName = data.find('FromUserName').text
     CreateTime = data.find('CreateTime').text
     Content = data.find('Content').text
-    logging.info("消息的前两位数")
+    logging.info("消息的前两位数 ： %s" % Content[0:2])
+    logging.info("用户明 ： %s" % Content[2:])
     if '我是' == Content[0:2]:
         logging.info("用户认证")
     MessageId = data.find('MsgId').text
