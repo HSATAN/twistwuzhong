@@ -46,6 +46,9 @@ def parse_url(request):
     FromUserName = data.find('FromUserName').text
     CreateTime = data.find('CreateTime').text
     Content = data.find('Content').text
+    logging.info("消息的前两位数")
+    if '我是' == Content[0:2]:
+        logging.info("用户认证")
     MessageId = data.find('MsgId').text
     print(Content)
     Content = "您好，你的消息我们已收到，将尽快为您处理，感谢您的关注！"
