@@ -1,7 +1,7 @@
 # _*_ coding:utf-8 _*_
 
 import requests
-from default import error_page, APPID, SECRET
+from config.default import error_page, APPID, SECRET
 url = 'https://api.weixin.qq.com/customservice/kfaccount/add?access_token=renhuaishimaobazhongxue'
 
 data = {
