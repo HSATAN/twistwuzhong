@@ -7,8 +7,10 @@ import json
 import logging
 import requests
 import re
+from weixin.api.person_rank import PersonRank
+from weixin.api.all_rank import AllRank
 from data.text import text1, text2, fakeName
-from default import error_page, APPID, SECRET
+from config.default import error_page, APPID, SECRET
 from data.default_html import default_html
 from weixin.rundata import RunData
 from weixin.api.get_code import GetCode
@@ -22,6 +24,8 @@ class Root(Resource):
         self.putChild("rundata",RunData())
         self.putChild("wx", WXCheck())
         self.putChild("MP_verify_NDeHTSMiVI1x3rfh.txt", Auth())
+        self.putChild("personrank", PersonRank())
+        self.putChild("allrank", AllRank())
 class Auth(Resource):
     def render_GET(self, request):
         return 'NDeHTSMiVI1x3rfh'
