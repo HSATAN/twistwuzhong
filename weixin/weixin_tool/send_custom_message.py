@@ -1,13 +1,25 @@
 # _*_ coding:utf-8 _*_
 import requests
-url = 'https://api.weixin.qq.com/cgi-bin/message/mass/send?access_token=' \
-      '10_sY5qC1yapr-BuXA_rhhpfFDxPpDi0du31g6GtK6ctg3T5-o0s21AYE1aLL40y2cFFxkLD' \
-      'H9qlgQG8Lps3iUnVVmGrTB3xPiVW23mS_6youA6SD-3AGMzFCG5RA7G_5-UevhgTzLaaFOp1aHBYGHcABAHPQ'
+import json
+from weixin.token_action import get_access_token
+url = 'https://api.weixin.qq.com/cgi-bin/message/mass/send?access_token=%s'
 
 data = {
    "touser":[
-    "o-u061RxikdR97aGWvjQldVwzC7o","o-u061fqa-GcBFKZhyhhez7i3wZA"
+    "o-u061Sh5MRebTgbZWeRLJaxYqD4","o-u061ZFbWfu2tG_F6hr708cpXLY"
    ],
     "msgtype": "text",
-    "text": { "content": "hello from boxer."}
+    "text": { "content": "你好，欢迎来到茅坝中学微信公众号，在这里你可以了解到学校的更多情况\nhttp://www.myenger.com"}
 }
+def send_message_all(data):
+    """
+    群发消息
+    :param data: 消息体
+    :return:
+    """
+    token = get_access_token()
+    res = requests.post(url=url % token, data=json.dumps(data, ensure_ascii=False))
+
+    print res.text
+
+send_message_all(data)
