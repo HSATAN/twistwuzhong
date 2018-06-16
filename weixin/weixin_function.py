@@ -3,7 +3,7 @@ from lxml import etree
 import random
 import logging
 import sys
-from weixin_config.default import HOST_URL
+from config.default import HOST_URL
 from database.mysql import MysqlDB
 reload(sys)
 sys.setdefaultencoding("utf-8")
