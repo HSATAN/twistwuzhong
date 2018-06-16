@@ -3,7 +3,7 @@
 微信公众号创建自定义菜单
 
 """
-from weixin.config import create_menu_url
+from weixin.weixin_config import create_menu_url
 import requests
 import json
 token = "10_w0MOaSFm5GbET3uVPvR4ghG4AFvQ-mlW5wB739YJ9O-Rh0OMQMhXtLR1ET_JWUoW3Pnf0Ce6yNEj5cwqvP_1F5e9mkTMUbtlNbQyGqTRDC9yBdjzshJMAipseOZ-O4tpxtOzsRzi-qu56gBwPHQdAAALDM"
