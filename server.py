@@ -26,7 +26,7 @@ class Root(Resource):
         self.putChild("rundata",RunData())
         self.putChild("wx", WXCheck())
         self.putChild("MP_verify_NDeHTSMiVI1x3rfh.txt", Auth())
-        self.putChild("personrank", PersonRank())
+        self.putChild("todayrank", PersonRank())
         self.putChild("allrank", AllRank())
         self.putChild("test", Test())
         self.putChild("querydata", QueryData())

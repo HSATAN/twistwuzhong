@@ -6,7 +6,7 @@
 from weixin.weixin_config import create_menu_url
 import requests
 import json
-token = "10_w0MOaSFm5GbET3uVPvR4ghG4AFvQ-mlW5wB739YJ9O-Rh0OMQMhXtLR1ET_JWUoW3Pnf0Ce6yNEj5cwqvP_1F5e9mkTMUbtlNbQyGqTRDC9yBdjzshJMAipseOZ-O4tpxtOzsRzi-qu56gBwPHQdAAALDM"
+token = "10_9kRISUY40XkAjr-e-TzbiNopt--IELkMyZPccZg9CXc49vZnlsJc2RQQoO6huDyQjYraSRCl7L6xnJskrPMsugDWEUOzhyDq_NqJkmMeYcfTp1QnuGUkpjW-d7WAw-0IaH_BHZJT-iqh5FzqVLWeACAOEP"
 
 data = {"button":
         [
@@ -16,13 +16,13 @@ data = {"button":
                 [
                     {
                         "type": "view",
-                        "name": "今日排名",
-                        "url": "http://www.myenger.com/allrank"
+                        "name": "查看今日排名",
+                        "url": "http://www.myenger.com/todayrank"
                     },
                     {
                         "type": "view",
                         "name": "查看我的数据",
-                        "url": "http://www.myenger.com/personrank"
+                        "url": "http://www.myenger.com/persondata"
                     }
                 ]
             },
