@@ -8,6 +8,11 @@ text1 = """
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>茅坝中学健康运动</title>
+    <script>
+    function(){
+    alert("test");
+    }
+    </script>
     <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/radialIndicator/1.3.1/radialIndicator.min.js"></script>
     <link rel="stylesheet" href="http://cdn.bootcss.com/spectre.css/0.5.0/spectre.min.css">

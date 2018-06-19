@@ -5,9 +5,9 @@
 """
 
 from twisted.web.resource import Resource
-
+from weixin.html.all_rank_html import all_rank_html_text
 
 class PersonRank(Resource):
 
     def render_GET(self, request):
-        return "这是个人数据排名"
+        return all_rank_html_text

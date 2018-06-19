@@ -7,6 +7,7 @@ import json
 import logging
 import requests
 import re
+from common.function import get_day
 from weixin.api.person_rank import PersonRank
 from weixin.api.all_rank import AllRank
 from data.text import text1, text2, fakeName
@@ -15,6 +16,7 @@ from data.default_html import default_html
 from weixin.rundata import RunData
 from weixin.api.get_code import GetCode
 from weixin.weixin_function import parse_text, parse_url
+from weixin.query_data import get_today_data
 
 class Root(Resource):
 
@@ -26,6 +28,32 @@ class Root(Resource):
         self.putChild("MP_verify_NDeHTSMiVI1x3rfh.txt", Auth())
         self.putChild("personrank", PersonRank())
         self.putChild("allrank", AllRank())
+        self.putChild("test", Test())
+        self.putChild("querydata", QueryData())
+        self.putChild("today", Today())
+
+class Today(Resource):
+    """
+    返回当日数据
+    """
+    def render_POST(self, request):
+        data = get_today_data()
+        print data
+        return json.dumps(data)
+
+class QueryData(Resource):
+    def render_POST(self, request):
+        start_date = request.args.get("startdate")[0]
+        end_date = request.args.get("enddate")[0]
+        return json.dumps({"data": "黄开杰"})
+class Test(Resource):
+    """
+    测试网页
+    """
+    def render_GET(self, request):
+        from weixin.html.all_rank_html import  all_rank_html_text
+        return all_rank_html_text
+
 class Auth(Resource):
     def render_GET(self, request):
         return 'NDeHTSMiVI1x3rfh'
