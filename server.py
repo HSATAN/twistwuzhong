@@ -28,7 +28,7 @@ class Root(Resource):
         self.putChild("MP_verify_NDeHTSMiVI1x3rfh.txt", Auth())
         self.putChild("todayrank", PersonRank())
         self.putChild("allrank", AllRank())
-        self.putChild("test", Test())
+        self.putChild("test", Ceshi())
         self.putChild("querydata", QueryData())
         self.putChild("today", Today())
 
@@ -46,7 +46,7 @@ class QueryData(Resource):
         start_date = request.args.get("startdate")[0]
         end_date = request.args.get("enddate")[0]
         return json.dumps({"data": "黄开杰"})
-class Test(Resource):
+class Ceshi(Resource):
     """
     测试网页
     """
