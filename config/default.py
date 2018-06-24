@@ -8,6 +8,13 @@ MYSQL_PASSWORD = 'WZhkj555.'
 MYSQL_USER = 'WUZHONG'
 TEACHER_TABLE = 'teacher'
 
+# redis 数据库配置
+REDIS_HOST = "39.105.139.16"
+REDIS_DB = 1
+REDIS_PORT = 6379
+REDIS_PASSWORD = "edison555"
+
+
 # 微信数据提供商服务器配置
 projectID = "hrmbzx"
 salt = "ayf59mgqre4jibc3"
