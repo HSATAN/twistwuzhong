@@ -1,7 +1,6 @@
 # _*_ coding:utf-8 _*_
 
 import subprocess
-from database.mysql import MysqlDB
 from celery import Celery
 
 celery_instance = Celery()
