@@ -2,4 +2,6 @@ Twisted==14.0.0
 lxml
 pymysql
 redis
+mysql-devel
+MySQL-python
 celery

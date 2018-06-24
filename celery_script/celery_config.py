@@ -16,3 +16,23 @@ CELERY_RESULT_DB_TABLENAMES = {
     'task': 'taskmeta',
     'group': 'groupmeta',
 }
+
+
+# CELERY_TASK_SERIALIZER = 'json'
+# CELERY_RESULT_SERIALIZER = 'json'
+# CELERY_ACCEPT_CONTENT = ['json']
+# CELERY_TIMEZONE = 'Asia/Shanghai'
+# CELERY_ENABLE_UTC = True
+
+from  datetime import timedelta
+
+# 定时任务
+
+CELERYBEAT_SCHEDULE = {
+    "update_day_data":
+        {
+            "task": "celery_script.celery_tasks.add",
+            "schedule": crontab(),
+            "args": (333,9),
+        },
+}
