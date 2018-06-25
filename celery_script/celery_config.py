@@ -32,7 +32,7 @@ CELERYBEAT_SCHEDULE = {
     "asyn_one_day":
         {
             "task": "celery_script.celery_tasks.aysn_one_day_data",
-            "schedule": crontab(minute=5),
+            "schedule": crontab(minute='*/3'),
             "args": None,
         },
 }
