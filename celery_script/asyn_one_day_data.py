@@ -4,6 +4,7 @@ from config.default import projectID, salt, REMOTE_URL, TEACHER_TABLE
 import json, requests
 from database.mysql import MysqlDB
 import time
+from datetime import datetime
 from common.function import get_day
 def aysn_one_day_data():
     data = {
@@ -18,11 +19,11 @@ def aysn_one_day_data():
     for user in weixin_data:
         fakeName = user['fakeName']
         nickName = user['nickName']
-        timestamp = time.time()
+        timestamp = datetime.now()
         scoreNow = user['scoreNow']
         dateString = str(get_day())
         sql = "insert into %s (fakeName,nickName,scoreNow,dateString)" \
-              " VALUES ('%s','%s',%s,%s)  ON duplicate KEY UPDATE scoreNow=%s, update_time=%s" % (TEACHER_TABLE,
+              " VALUES ('%s','%s',%s,%s)  ON duplicate KEY UPDATE scoreNow=%s, update_time='%s'" % (TEACHER_TABLE,
                                                                                                   fakeName, nickName,
                                                                                                   scoreNow, dateString,
                                                                                                   scoreNow, timestamp)

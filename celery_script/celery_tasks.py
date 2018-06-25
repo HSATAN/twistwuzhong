@@ -7,7 +7,7 @@ import json, requests
 from database.mysql import MysqlDB
 import time
 from common.function import get_day
-
+from datetime import datetime
 celery_instance = Celery()
 celery_instance.config_from_object('celery_script.celery_config')
 
@@ -28,11 +28,11 @@ def aysn_one_day_data():
     for user in weixin_data:
         fakeName = user['fakeName']
         nickName = user['nickName']
-        timestamp = time.time()
+        timestamp = datetime.now()
         scoreNow = user['scoreNow']
         dateString = str(get_day())
         sql = "insert into %s (fakeName,nickName,scoreNow,dateString)" \
-              " VALUES ('%s','%s',%s,%s)  ON duplicate KEY UPDATE scoreNow=%s, update_time=%s" % (TEACHER_TABLE,
+              " VALUES ('%s','%s',%s,%s)  ON duplicate KEY UPDATE scoreNow=%s, update_time='%s'" % (TEACHER_TABLE,
                                                                                                   fakeName, nickName,
                                                                                                   scoreNow, dateString,
                                                                                                   scoreNow, timestamp)

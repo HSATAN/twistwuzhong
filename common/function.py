@@ -1,6 +1,5 @@
 # _*_ coding:utf-8 _*_
 import time
-
 def timestamp_to_date(timestamp):
     localtime = time.localtime(timestamp)
     date = time.strftime("%Y-%m-%d %H:%M:%S", localtime)
