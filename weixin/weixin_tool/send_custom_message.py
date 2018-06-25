@@ -10,7 +10,7 @@ data = {
        "o-u061XHdHtcqSzk3R6mfIldMSq4"
    ],
     "msgtype": "text",
-    "text": { "content": "19631111555111444425"}
+    "text": { "content": "196311115fgdgdfgd55111444425"}
 }
 def send_message_all(data):
     """
