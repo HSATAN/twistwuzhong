@@ -7,6 +7,7 @@ import json
 import logging
 import requests
 import re
+from common.json_encoder import DatetimeEncoder
 from common.function import get_day
 from weixin.api.person_rank import PersonRank
 from weixin.api.all_rank import AllRank
@@ -39,7 +40,7 @@ class Today(Resource):
     def render_POST(self, request):
         data = get_today_data()
         print data
-        return json.dumps(data)
+        return json.dumps(data, cls=DatetimeEncoder)
 
 class QueryData(Resource):
     def render_POST(self, request):

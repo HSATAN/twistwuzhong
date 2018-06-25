@@ -6,10 +6,11 @@ url = 'https://api.weixin.qq.com/cgi-bin/message/mass/send?access_token=%s'
 
 data = {
    "touser":[
-    "o-u061Sh5MRebTgbZWeRLJaxYqD4","o-u061ZFbWfu2tG_F6hr708cpXLY"
+    "o-u061Sh5MRebTgbZWeRLJaxYqD4","o-u061ZFbWfu2tG_F6hr708cpXLY",
+       "o-u061XHdHtcqSzk3R6mfIldMSq4"
    ],
     "msgtype": "text",
-    "text": { "content": "你好，欢迎来到茅坝中学微信公众号，在这里你可以了解到学校的更多情况\nhttp://www.myenger.com"}
+    "text": { "content": "19631111555111444425"}
 }
 def send_message_all(data):
     """
