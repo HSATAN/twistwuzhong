@@ -35,4 +35,10 @@ CELERYBEAT_SCHEDULE = {
             "schedule": crontab(),
             "args": (333,9),
         },
+    "asyn_one_day":
+        {
+            "task": "celery_script.celery_tasks.aysn_one_day_data",
+            "schedule": crontab(),
+            "args": None,
+        },
 }
