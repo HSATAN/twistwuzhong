@@ -53,15 +53,7 @@ all_rank_html_text = """
     </script>
 </head>
 <body>
-<label>查询：</label><input list="browsers" />
-<datalist id="browsers">
-    <option value="Internet Explorer" label="IE">
-    <option value="Firefox" label="火狐">
-    <option value="Chrome" label="谷歌">
-    <option value="Opera" label="欧朋">
-    <option value="Safari" label="Safari">
-    <option value="Sogou" label="搜狗">
-</datalist>
+
 <br>
 <ul class="tab tab-block">
                     <li class="tab-item" :class="tabSelected==='today'?'active':''">
