@@ -31,4 +31,31 @@ def aysn_one_day_data():
         print sql
         MysqlDB.insert(sql)
 
-aysn_one_day_data()
+def get_data_by_date():
+    data = {
+        'projectID': projectID,
+        'salt': salt,
+        'endDateString': '20180624',
+        'startDateString': '20180622'
+    }
+
+    res = requests.post(url=REMOTE_URL + '/getDataByPeriod_v4/', data=data)
+    weixin_data = json.loads(json.loads(res.text)['list'])
+    print weixin_data
+    timestamp = datetime.now()
+    for user in weixin_data:
+        fakeName = user['fakeName']
+        nickName = user['nickName']
+        for rundata in user['list']:
+            scoreNow = rundata['scoreNow']
+            dateString = rundata['dateString']
+            sql = "insert into %s (fakeName,nickName,scoreNow,dateString)" \
+                  " VALUES ('%s','%s',%s,%s)  ON duplicate KEY UPDATE scoreNow=%s, update_time='%s'" % (TEACHER_TABLE,
+                                                                                                        fakeName, nickName,
+                                                                                                        scoreNow,
+                                                                                                        dateString,
+                                                                                                        scoreNow, timestamp)
+
+        print sql
+        MysqlDB.insert(sql)
+

@@ -29,16 +29,10 @@ from  datetime import timedelta
 # 定时任务
 
 CELERYBEAT_SCHEDULE = {
-    "update_day_data":
-        {
-            "task": "celery_script.celery_tasks.add",
-            "schedule": crontab(),
-            "args": (333,9),
-        },
     "asyn_one_day":
         {
             "task": "celery_script.celery_tasks.aysn_one_day_data",
-            "schedule": crontab(),
+            "schedule": crontab(minute=5),
             "args": None,
         },
 }
