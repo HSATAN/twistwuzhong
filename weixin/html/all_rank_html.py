@@ -30,7 +30,7 @@ all_rank_html_text = """
         function handle_data(data) {
             data = JSON.parse(data);
             data.forEach(function(curent,index, item) {
-                $("#main_tboby").append( "<tr><th>" + index.toString()+ "</th><th>" + curent["nickName"]+"</th><th>"+curent["scoreNow"]+ "</th></tr>");
+                $("#main_tboby").append( "<tr><th>" + (index+1).toString()+ "</th><th>" + curent["nickName"]+"</th><th>"+curent["scoreNow"]+ "</th></tr>");
             });
         }
         $(document).ready(function () {
@@ -63,8 +63,9 @@ all_rank_html_text = """
                 <table class="table table-striped table-hover" style="font-size: 0.5em;">
                     <thead>
                     <tr>
-                        <th>昵称</th>
                         <th>排名</th>
+                        <th>昵称</th>
+
                         <th>步数</th>
                     </tr>
                     </thead>
