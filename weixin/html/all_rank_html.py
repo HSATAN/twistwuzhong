@@ -7,7 +7,7 @@ all_rank_html_text = """
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Title</title>
+    <title>茅坝中学运动排名</title>
     <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/radialIndicator/1.3.1/radialIndicator.min.js"></script>
     <link rel="stylesheet" href="http://cdn.bootcss.com/spectre.css/0.5.0/spectre.min.css">
@@ -30,7 +30,7 @@ all_rank_html_text = """
         function handle_data(data) {
             data = JSON.parse(data);
             data.forEach(function(curent,index, item) {
-                $("#main_tboby").append( "<tr><th>" + (index+1).toString()+ "</th><th>" + curent["nickName"]+"</th><th>"+curent["scoreNow"]+ "</th></tr>");
+                $("#main_tboby").append( "<tr><th>" + index.toString()+ "</th><th>" + curent["nickName"]+"</th><th>"+curent["scoreNow"]+ "</th></tr>");
             });
         }
         $(document).ready(function () {

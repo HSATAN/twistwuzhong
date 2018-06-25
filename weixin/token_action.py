@@ -40,4 +40,3 @@ def get_access_token(id='001'):
     except Exception as e:
         logging.error("get access_token error: %s" % e)
         return None
-
