@@ -35,8 +35,8 @@ def get_data_by_date():
     data = {
         'projectID': projectID,
         'salt': salt,
-        'endDateString': '20180624',
-        'startDateString': '20180622'
+        'endDateString': '20180626',
+        'startDateString': '20180610'
     }
 
     res = requests.post(url=REMOTE_URL + '/getDataByPeriod_v4/', data=data)
@@ -56,6 +56,7 @@ def get_data_by_date():
                                                                                                         dateString,
                                                                                                         scoreNow, timestamp)
 
-        print sql
-        MysqlDB.insert(sql)
+            print sql
+            MysqlDB.insert(sql)
 
+get_data_by_date()

@@ -11,3 +11,7 @@ def get_today_data():
     print "select * from %s WHERE dateString='%s'" % (TEACHER_TABLE, get_day())
     today_data = MysqlDB.run_query("select * from %s WHERE dateString='%s' ORDER BY scoreNow asc" % (TEACHER_TABLE, get_day()))
     return today_data
+
+def query_data_by_date(start_time=None, end_time=None):
+    today_data = MysqlDB.run_query("select * from %s WHERE dateString='%s' ORDER BY scoreNow asc" % (TEACHER_TABLE, get_day()))
+    return today_data

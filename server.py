@@ -17,7 +17,7 @@ from data.default_html import default_html
 from weixin.rundata import RunData
 from weixin.api.get_code import GetCode
 from weixin.weixin_function import parse_text, parse_url
-from weixin.query_data import get_today_data
+from weixin.query_data import get_today_data, query_data_by_date
 
 class Root(Resource):
 
@@ -32,6 +32,15 @@ class Root(Resource):
         self.putChild("test", Ceshi())
         self.putChild("querydata", QueryData())
         self.putChild("today", Today())
+        self.putChild("querydata", QueryData())
+class QueryData(Resource):
+    """
+    按照条件查询
+    """
+    def render_POST(self, request):
+        data = query_data_by_date()
+        print data
+        return json.dumps(data, cls=DatetimeEncoder)
 
 class Today(Resource):
     """
@@ -42,11 +51,6 @@ class Today(Resource):
         print data
         return json.dumps(data, cls=DatetimeEncoder)
 
-class QueryData(Resource):
-    def render_POST(self, request):
-        start_date = request.args.get("startdate")[0]
-        end_date = request.args.get("enddate")[0]
-        return json.dumps({"data": "黄开杰"})
 class Ceshi(Resource):
     """
     测试网页
