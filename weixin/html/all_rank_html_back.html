@@ -50,7 +50,13 @@
     </script>
 </head>
 <body>
-
+<div id="select_div" style="padding-top: 10px">
+    <label>查询：</label>
+    <select id="select_query">
+        <option value="my_data">我的个人主页</option>
+        <option value="current_week">查看本周</option>
+        <option value="last_week">查看上周</option>
+    </select></div>
 <br>
 <ul class="tab tab-block">
                     <li class="tab-item" :class="tabSelected==='today'?'active':''">
