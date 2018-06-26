@@ -36,8 +36,6 @@ all_rank_html_text = """
         $(document).ready(function () {
             $("#select_query").bind("change", function () {
                var key = $(this).val();
-               alert(key);
-
                $.post("querydata",
                 {"key": key
                 },
