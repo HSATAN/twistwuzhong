@@ -87,6 +87,7 @@ class WXCheck(Resource):
             return receiveData
         except Exception as e:
             logging.info("解析消息错误 %s" % e)
+            return "系统维护中，请稍后再试......"
 
 
 class Index(Resource):
