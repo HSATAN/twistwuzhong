@@ -29,7 +29,9 @@ all_rank_html_text = """
         }
         function handle_data(data) {
             data = JSON.parse(data);
+            $("#main_tboby").empty();
             data.forEach(function(curent,index, item) {
+
                 $("#main_tboby").append( "<tr><th>" + (index+1).toString()+ "</th><th>" + curent["nickName"]+"</th><th>"+curent["scoreNow"]+ "</th></tr>");
             });
         }

@@ -3,14 +3,18 @@
 from database.mysql import MysqlDB
 from common.function import get_day
 from config.default import TEACHER_TABLE
+from datetime import datetime, timedelta
+import time
+
 
 def count_time(key=None):
     today = str(get_day())
     if not key:
         return today, today
-    elif key=="current_week":
-        pass
-
+    elif key == "current_week":
+        return str(get_day(time.mktime((datetime.now() + timedelta(days=-datetime.today().weekday())).timetuple()))), str(get_day())
+    elif key == 'last_week':
+        return str(get_day(time.mktime((datetime.now() + timedelta(days=-datetime.today().weekday()-7)).timetuple()))), str(get_day(time.mktime((datetime.now() + timedelta(days=-datetime.today().weekday()-1)).timetuple())))
 
 def get_today_data():
     """
@@ -28,6 +32,9 @@ def query_data_by_date(key=None):
     else:
         startTime, endTime = count_time(key)
         sql = "SELECT fakeName,nickName,dateString,openID, SUM(scoreNow) AS scoreNow" \
-              " from teacher WHERE dateString>='%s' AND dateString <= '%s'  GROUP BY fakeName " % (startTime, endTime)
-        return {}
-print query_data_by_date()
+              " from teacher WHERE dateString>='%s' AND dateString <= '%s'  GROUP BY fakeName ORDER BY scoreNow ASC " % (startTime, endTime)
+        print sql
+        data = MysqlDB.run_query(sql)
+        print data
+        return  data
+
