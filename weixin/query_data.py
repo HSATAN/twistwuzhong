@@ -9,7 +9,7 @@ import time
 
 def count_time(key=None):
     today = str(get_day())
-    if not key:
+    if not key  or key == "today":
         return today, today
     elif key == "current_week":
         return str(get_day(time.mktime((datetime.now() + timedelta(days=-datetime.today().weekday())).timetuple()))), str(get_day())
