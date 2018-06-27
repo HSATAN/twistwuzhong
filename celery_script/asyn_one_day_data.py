@@ -59,4 +59,3 @@ def get_data_by_date():
             print sql
             MysqlDB.insert(sql)
 
-get_data_by_date()

@@ -38,8 +38,8 @@ class QueryData(Resource):
     按照条件查询
     """
     def render_POST(self, request):
-        data = query_data_by_date()
-        print data
+        key = request.args.get("key")[0]
+        data = query_data_by_date(key)
         return json.dumps(data, cls=DatetimeEncoder)
 
 class Today(Resource):
