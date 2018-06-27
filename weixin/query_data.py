@@ -15,7 +15,8 @@ def count_time(key=None):
         return str(get_day(time.mktime((datetime.now() + timedelta(days=-datetime.today().weekday())).timetuple()))), str(get_day())
     elif key == 'last_week':
         return str(get_day(time.mktime((datetime.now() + timedelta(days=-datetime.today().weekday()-7)).timetuple()))), str(get_day(time.mktime((datetime.now() + timedelta(days=-datetime.today().weekday()-1)).timetuple())))
-
+    elif key == "month":
+        return str(get_day(time.mktime((datetime.now() + timedelta(days=-datetime.today().day+1)).timetuple()))), str(get_day())
 def get_today_data():
     """
     查询今日数据
