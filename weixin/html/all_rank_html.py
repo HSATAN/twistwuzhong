@@ -76,10 +76,11 @@ all_rank_html_text = """
     <label>查询：</label>
     <select id="select_query">
         <option value="today">今日数据</option>
-        <option value="my_home">我的个人主页</option>
         <option value="current_week">查看本周</option>
         <option value="last_week">查看上周</option>
         <option value="month">查看本月</option>
+        <option value="my_home">我的个人主页</option>
+
     </select></div>
 <br>
 <ul class="tab tab-block">
