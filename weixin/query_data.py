@@ -28,8 +28,10 @@ def get_today_data():
 
 def query_data_by_date(key=None):
 
-    if not key:
-        return MysqlDB.run_query("select * from %s WHERE dateString='%s' ORDER BY scoreNow asc" % (TEACHER_TABLE, get_day()))
+    if not key or key == "today":
+        sql = "select * from %s WHERE dateString='%s' ORDER BY scoreNow asc" % (TEACHER_TABLE, get_day())
+        print sql
+        return MysqlDB.run_query(sql)
     else:
         startTime, endTime = count_time(key)
         sql = "SELECT fakeName,nickName,dateString,openID, SUM(scoreNow) AS scoreNow" \
