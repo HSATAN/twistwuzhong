@@ -38,7 +38,13 @@ all_rank_html_text = """
         $(document).ready(function () {
             $("#select_query").bind("change", function () {
                var key = $(this).val();
-               $.post("querydata",
+               if (key == "my_home")
+               {
+                   alert("个人页面正在开发中，请等待...");
+               }
+               else
+               {
+                   $.post("querydata",
                 {"key": key
                 },
                 function (data, status) {
@@ -51,6 +57,8 @@ all_rank_html_text = """
                 }
 
             );
+               }
+
 
             });
             $.post("today",
