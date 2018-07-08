@@ -33,3 +33,5 @@
 [2018-06-06 21:03:42,296] [server.py L29] [INFO] 访问错误
 [2018-06-06 21:03:50,605] [server.py L29] [INFO] 访问错误
 [2018-06-06 21:03:51,884] [server.py L29] [INFO] 访问错误
+[2018-06-28 21:28:34,229] [mysql.py L54] [ERROR] (2006, "MySQL server has gone away (error(10054, ''))")
+[2018-06-28 21:28:47,618] [mysql.py L54] [ERROR] (0, '')

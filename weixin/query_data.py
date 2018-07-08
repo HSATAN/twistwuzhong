@@ -23,19 +23,19 @@ def get_today_data():
     :return:
     """
     print "select * from %s WHERE dateString='%s'" % (TEACHER_TABLE, get_day())
-    today_data = MysqlDB.run_query("select * from %s WHERE dateString='%s' ORDER BY scoreNow asc" % (TEACHER_TABLE, get_day()))
+    today_data = MysqlDB.run_query("select * from %s WHERE dateString='%s' ORDER BY scoreNow DESC " % (TEACHER_TABLE, get_day()))
     return today_data
 
 def query_data_by_date(key=None):
 
     if not key or key == "today":
-        sql = "select * from %s WHERE dateString='%s' ORDER BY scoreNow asc" % (TEACHER_TABLE, get_day())
+        sql = "select * from %s WHERE dateString='%s' ORDER BY scoreNow DESC " % (TEACHER_TABLE, get_day())
         print sql
         return MysqlDB.run_query(sql)
     else:
         startTime, endTime = count_time(key)
         sql = "SELECT fakeName,nickName,dateString,openID, SUM(scoreNow) AS scoreNow" \
-              " from teacher WHERE dateString>='%s' AND dateString <= '%s'  GROUP BY fakeName ORDER BY scoreNow ASC " % (startTime, endTime)
+              " from teacher WHERE dateString>='%s' AND dateString <= '%s'  GROUP BY fakeName ORDER BY scoreNow DESC " % (startTime, endTime)
         print sql
         data = MysqlDB.run_query(sql)
         print data

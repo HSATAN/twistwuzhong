@@ -48,7 +48,7 @@ class Today(Resource):
     """
     def render_POST(self, request):
         data = get_today_data()
-        print data
+        logging.info("today==  %s" % data)
         return json.dumps(data, cls=DatetimeEncoder)
 
 class Ceshi(Resource):
