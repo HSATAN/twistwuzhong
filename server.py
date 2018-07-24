@@ -18,6 +18,7 @@ from weixin.rundata import RunData
 from weixin.api.get_code import GetCode
 from weixin.weixin_function import parse_text, parse_url
 from weixin.query_data import get_today_data, query_data_by_date
+from weixin.api.get_openid import OpenId
 
 class Root(Resource):
 
@@ -33,6 +34,7 @@ class Root(Resource):
         self.putChild("querydata", QueryData())
         self.putChild("today", Today())
         self.putChild("querydata", QueryData())
+        self.putChild("openid", OpenId())
 class QueryData(Resource):
     """
     按照条件查询

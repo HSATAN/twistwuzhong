@@ -6,7 +6,8 @@
 from weixin.weixin_config import create_menu_url
 import requests
 import json
-token = "10_9kRISUY40XkAjr-e-TzbiNopt--IELkMyZPccZg9CXc49vZnlsJc2RQQoO6huDyQjYraSRCl7L6xnJskrPMsugDWEUOzhyDq_NqJkmMeYcfTp1QnuGUkpjW-d7WAw-0IaH_BHZJT-iqh5FzqVLWeACAOEP"
+from weixin.token_action import get_access_token
+token = get_access_token()
 
 data = {"button":
         [
@@ -23,6 +24,11 @@ data = {"button":
                         "type": "view",
                         "name": "查看我的数据",
                         "url": "http://www.myenger.com/persondata"
+                    },
+{
+                        "type": "view",
+                        "name": "获取openid",
+                        "url": "http://www.myenger.com/openid"
                     }
                 ]
             },
@@ -30,6 +36,11 @@ data = {"button":
                 "name": "茅坝中学",
                 "type": "click",
                 "key": "MB_MAIN_PAGE"
+            },
+            {
+                "name": "其它",
+                "type": "click",
+                "key": "MB_QITA_PAGE"
             }
         ]
 }
