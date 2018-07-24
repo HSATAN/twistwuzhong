@@ -16,7 +16,7 @@ class OpenId(Resource):
             print url
             try:
                 res = requests.get(url=url)
-                content = json.loads(res.text)
+                content = json.loads(str(res.text))
                 print content
                 logging.info("content=%s" % content)
                 logging.info("openid=" % content["openid"])
