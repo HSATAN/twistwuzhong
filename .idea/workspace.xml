@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49ea01fb-00c9-444a-a44a-4ad0abc07f3f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/weixin/api/get_openid.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weixin/token_action.py" afterPath="$PROJECT_DIR$/weixin/token_action.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log" afterPath="$PROJECT_DIR$/log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weixin/api/get_openid.py" afterPath="$PROJECT_DIR$/weixin/api/get_openid.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weixin/weixin_config.py" afterPath="$PROJECT_DIR$/weixin/weixin_config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weixin/weixin_tool/create_menu.py" afterPath="$PROJECT_DIR$/weixin/weixin_tool/create_menu.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +23,8 @@
     <SUITE FILE_PATH="coverage/twistwuzhong$update_token.coverage" NAME="update_token Coverage Results" MODIFIED="1529160682393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weixin" />
     <SUITE FILE_PATH="coverage/twistwuzhong$celery_config.coverage" NAME="celery_config Coverage Results" MODIFIED="1529822848895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/celery_script" />
     <SUITE FILE_PATH="coverage/twistwuzhong$query_data.coverage" NAME="query_data Coverage Results" MODIFIED="1530113897795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weixin" />
-    <SUITE FILE_PATH="coverage/twistwuzhong$create_menu.coverage" NAME="create_menu Coverage Results" MODIFIED="1532445719068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weixin/weixin_tool" />
-    <SUITE FILE_PATH="coverage/twistwuzhong$server.coverage" NAME="server Coverage Results" MODIFIED="1532445023481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/twistwuzhong$create_menu.coverage" NAME="create_menu Coverage Results" MODIFIED="1532447119402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weixin/weixin_tool" />
+    <SUITE FILE_PATH="coverage/twistwuzhong$server.coverage" NAME="server Coverage Results" MODIFIED="1532450023312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/twistwuzhong$default.coverage" NAME="default Coverage Results" MODIFIED="1528294031940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/twistwuzhong$add_kefu.coverage" NAME="add_kefu Coverage Results" MODIFIED="1529939813258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/weixin/weixin_tool" />
     <SUITE FILE_PATH="coverage/twistwuzhong$json_encoder.coverage" NAME="json_encoder Coverage Results" MODIFIED="1529928961223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/common" />
@@ -53,8 +52,8 @@
       <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
+            <state relative-caret-position="270">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="e#24#60#0" expanded="true" />
               </folding>
@@ -62,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_menu.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="create_menu.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weixin/weixin_tool/create_menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+            <state relative-caret-position="290">
+              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding>
                 <element signature="e#45#93#0" expanded="true" />
               </folding>
@@ -77,19 +76,21 @@
       <file leaf-file-name="weixin_config.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weixin/weixin_config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_openid.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="get_openid.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weixin/api/get_openid.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding>
+                <element signature="e#23#64#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -195,7 +196,6 @@
         <option value="$PROJECT_DIR$/weixin/api/all_rank.py" />
         <option value="$PROJECT_DIR$/weixin/config.py" />
         <option value="$PROJECT_DIR$/weixin/weixin_function.py" />
-        <option value="$PROJECT_DIR$/weixin/weixin_config.py" />
         <option value="$PROJECT_DIR$/weixin/update_token.py" />
         <option value="$PROJECT_DIR$/weixin/allrank.html" />
         <option value="$PROJECT_DIR$/data/text.py" />
@@ -217,10 +217,11 @@
         <option value="$PROJECT_DIR$/weixin/html/all_rank_html.py" />
         <option value="$PROJECT_DIR$/celery_script/asyn_one_day_data.py" />
         <option value="$PROJECT_DIR$/weixin/query_data.py" />
-        <option value="$PROJECT_DIR$/weixin/api/get_openid.py" />
         <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/weixin/token_action.py" />
         <option value="$PROJECT_DIR$/weixin/weixin_tool/create_menu.py" />
+        <option value="$PROJECT_DIR$/weixin/weixin_config.py" />
+        <option value="$PROJECT_DIR$/weixin/api/get_openid.py" />
       </list>
     </option>
   </component>
@@ -231,7 +232,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+    <option name="x" value="129" />
     <option name="y" value="13" />
     <option name="width" value="1924" />
     <option name="height" value="997" />
@@ -318,7 +319,7 @@
       <recent name="H:\wuzhong\twistwuzhong" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.create_menu">
+  <component name="RunManager" selected="Python.server">
     <configuration default="false" name="server" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -632,9 +633,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.create_menu" />
-        <item index="1" class="java.lang.String" itemvalue="Python.token_action" />
-        <item index="2" class="java.lang.String" itemvalue="Python.server" />
+        <item index="0" class="java.lang.String" itemvalue="Python.server" />
+        <item index="1" class="java.lang.String" itemvalue="Python.create_menu" />
+        <item index="2" class="java.lang.String" itemvalue="Python.token_action" />
         <item index="3" class="java.lang.String" itemvalue="Python.asyn_one_day_data" />
         <item index="4" class="java.lang.String" itemvalue="Python.query_data" />
       </list>
@@ -668,8 +669,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="13" width="1924" height="997" extended-state="0" />
-    <editor active="false" />
+    <frame x="129" y="13" width="1924" height="997" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26835853" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -677,9 +678,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295699" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34375" sideWeight="0.49785638" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34375" sideWeight="0.49785638" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33293268" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33293268" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1026,24 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="35" column="4" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-          <folding>
-            <element signature="e#24#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weixin/weixin_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weixin/token_action.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -1055,20 +1038,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weixin/api/get_openid.py">
+    <entry file="file://$PROJECT_DIR$/weixin/weixin_tool/create_menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="290">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="e#45#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin/weixin_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weixin/weixin_tool/create_menu.py">
+    <entry file="file://$PROJECT_DIR$/weixin/api/get_openid.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        <state relative-caret-position="210">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding>
-            <element signature="e#45#93#0" expanded="true" />
+            <element signature="e#23#64#0" expanded="true" />
           </folding>
         </state>
       </provider>

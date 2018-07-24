@@ -6,9 +6,13 @@
 from weixin.weixin_config import create_menu_url
 import requests
 import json
+from config.default import APPID
 from weixin.token_action import get_access_token
 token = get_access_token()
-
+redirect_url = "http%3a%2f%2fwww.myenger.com%2fopenid"
+base_url = "https://open.weixin.qq.com/connect/oauth2" \
+      "/authorize?appid=%s&redirect_uri=%s&" \
+      "response_type=code&scope=snsapi_userinfo&state=STATE#wechat_redirect" % (APPID, redirect_url)
 data = {"button":
         [
             {
@@ -28,7 +32,7 @@ data = {"button":
 {
                         "type": "view",
                         "name": "获取openid",
-                        "url": "http://www.myenger.com/openid"
+                        "url": base_url
                     }
                 ]
             },

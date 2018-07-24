@@ -35,3 +35,35 @@
 [2018-06-06 21:03:51,884] [server.py L29] [INFO] 访问错误
 [2018-06-28 21:28:34,229] [mysql.py L54] [ERROR] (2006, "MySQL server has gone away (error(10054, ''))")
 [2018-06-28 21:28:47,618] [mysql.py L54] [ERROR] (0, '')
+[2018-07-24 23:53:24,381] [get_openid.py L7] [INFO] <Request at 0x4975648 method=GET uri=/openid clientproto=HTTP/1.1>
+[2018-07-24 23:53:38,134] [get_openid.py L7] [INFO] <Request at 0x4975248 method=GET uri=/openid?id=123 clientproto=HTTP/1.1>
+[2018-07-24 23:54:54,298] [get_openid.py L7] [INFO] <Request at 0x3b20b08 method=GET uri=/openid?id=123&code=huangkaijie clientproto=HTTP/1.1>
+[2018-07-24 23:57:14,872] [get_openid.py L10] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-24 23:57:22,397] [get_openid.py L10] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-24 23:57:23,714] [get_openid.py L10] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-24 23:57:24,362] [get_openid.py L10] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-24 23:57:32,059] [get_openid.py L13] [INFO] 网页授权失败，获取code错误 ： 'NoneType' object has no attribute '__getitem__'
+[2018-07-24 23:57:38,881] [get_openid.py L13] [INFO] 网页授权失败，获取code错误 ： 'NoneType' object has no attribute '__getitem__'
+[2018-07-25 00:02:16,176] [get_openid.py L13] [INFO] 网页授权失败，获取code错误 ： 'NoneType' object has no attribute '__getitem__'
+[2018-07-25 00:02:24,941] [get_openid.py L10] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-25 00:28:17,618] [get_openid.py L14] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-25 00:28:18,559] [get_openid.py L22] [INFO] 获取openid失败：'openid'
+[2018-07-25 00:28:18,559] [get_openid.py L25] [INFO] 网页授权失败，获取code错误 ： float argument required, not exceptions.KeyError
+[2018-07-25 00:28:50,204] [get_openid.py L14] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-25 00:28:51,263] [get_openid.py L22] [INFO] 获取openid失败：'openid'
+[2018-07-25 00:28:51,263] [get_openid.py L25] [INFO] 网页授权失败，获取code错误 ： float argument required, not exceptions.KeyError
+[2018-07-25 00:29:15,417] [get_openid.py L14] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-25 00:29:16,440] [get_openid.py L23] [INFO] 获取openid失败：'openid'
+[2018-07-25 00:29:16,441] [get_openid.py L26] [INFO] 网页授权失败，获取code错误 ： float argument required, not exceptions.KeyError
+[2018-07-25 00:30:30,344] [get_openid.py L14] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-25 00:30:31,351] [get_openid.py L23] [INFO] 获取openid失败：'openid'
+[2018-07-25 00:31:00,680] [get_openid.py L14] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-25 00:31:01,538] [get_openid.py L26] [INFO] 网页授权失败，获取code错误 ： 'openid'
+[2018-07-25 00:31:26,608] [get_openid.py L14] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-25 00:31:58,918] [get_openid.py L14] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-25 00:33:19,134] [get_openid.py L14] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-25 00:33:20,155] [get_openid.py L20] [INFO] content={u'errcode': 40029, u'errmsg': u'invalid code, hints: [ req_id: atpT6a09942067 ]'}
+[2018-07-25 00:33:20,155] [get_openid.py L24] [INFO] 获取openid失败：'openid'
+[2018-07-25 00:33:48,132] [get_openid.py L14] [INFO] 网页授权成功: code=huangkaijie
+[2018-07-25 00:33:49,115] [get_openid.py L21] [INFO] content={u'errcode': 40029, u'errmsg': u'invalid code, hints: [ req_id: 50cSpa00232033 ]'}
+[2018-07-25 00:33:49,115] [get_openid.py L25] [INFO] 获取openid失败：'openid'
