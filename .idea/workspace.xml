@@ -74,8 +74,8 @@
       <file leaf-file-name="get_openid.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weixin/api/get_openid.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="223">
+              <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
               <folding>
                 <element signature="e#23#64#0" expanded="true" />
               </folding>
@@ -1057,8 +1057,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weixin/api/get_openid.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="223">
+          <caret line="22" column="42" lean-forward="true" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
           <folding>
             <element signature="e#23#64#0" expanded="true" />
           </folding>
