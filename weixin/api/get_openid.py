@@ -20,8 +20,8 @@ class OpenId(Resource):
                 print res.text
                 logging.info("content=%s" % content)
                 # logging.info("openid=" % content["openid"])
-                openid = content["openid"]
-                return str("你的openid为: %s" % openid)
+                openid = str(content["openid"])
+                return "你的openid为: %s" % openid
             except Exception as e:
                 logging.info("获取openid失败：%s" % e)
                 return "获取openid失败 %s" % e
