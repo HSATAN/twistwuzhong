@@ -74,8 +74,8 @@
       <file leaf-file-name="get_openid.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weixin/api/get_openid.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+            <state relative-caret-position="283">
+              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="e#23#64#0" expanded="true" />
               </folding>
@@ -221,8 +221,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="213" />
+    <option name="x" value="17" />
+    <option name="y" value="40" />
     <option name="width" value="1924" />
     <option name="height" value="997" />
   </component>
@@ -658,7 +658,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="213" width="1924" height="997" extended-state="0" />
+    <frame x="17" y="40" width="1924" height="997" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27213824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1057,8 +1057,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weixin/api/get_openid.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        <state relative-caret-position="283">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="e#23#64#0" expanded="true" />
           </folding>

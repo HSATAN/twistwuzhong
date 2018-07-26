@@ -19,7 +19,7 @@ class OpenId(Resource):
                 content = json.loads(res.text.encode("raw_unicode_escape").decode('utf8'))
                 print res.text
                 logging.info("content=%s" % content)
-                logging.info("openid=" % content["openid"])
+                # logging.info("openid=" % content["openid"])
                 return "你的openid为 %s" % content["openid"]
             except Exception as e:
                 logging.info("获取openid失败：%s" % e)
